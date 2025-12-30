@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="../css/game-responsive.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="shortcut icon" href="../img/favicon.png">
-    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
 
 
     <!-- Google tag (gtag.js) -->
@@ -77,43 +76,48 @@
         }
 
     </script>
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+
     <script>
         window.googletag = window.googletag || { cmd: [] };
 
         googletag.cmd.push(function () {
 
-            var responsiveMapping = googletag.sizeMapping()
-                .addSize([1024, 0], [[970, 250], [970, 90], [728, 90], [300, 600]])
-                .addSize([768, 0], [[728, 90], [468, 60], [300, 600]])
-                .addSize([0, 0], [[320, 480], [300, 600], [320, 100], [320, 50]])
+            var mapping = googletag.sizeMapping()
+                .addSize([1024, 768], [[970, 250], [970, 90], [728, 90], [300, 600]])
+                .addSize([768, 480], [[728, 90], [300, 250], [300, 600]])
+                .addSize([0, 0], [[300, 250], [320, 480]])
                 .build();
 
-            /* ===== D1 ===== */
+            /* D1 */
             googletag.defineSlot(
                 '/23330730517/skillgame24.com_d1',
-                [[300, 600], [320, 480], [728, 90], [970, 250]],
+                [[970, 250], [970, 90], [728, 90], [300, 600], [300, 250], [320, 480]],
                 'div-gpt-ad-1766483370586-0'
-            ).defineSizeMapping(responsiveMapping)
+            ).defineSizeMapping(mapping)
                 .addService(googletag.pubads());
 
-            /* ===== D2 ===== */
+            /* D2 */
             googletag.defineSlot(
                 '/23330730517/skillgame24.com_d2',
-                [[300, 600], [320, 480], [728, 90], [970, 90]],
+                [[970, 250], [970, 90], [728, 90], [300, 600], [300, 250], [320, 480]],
                 'div-gpt-ad-1766483398952-0'
-            ).defineSizeMapping(responsiveMapping)
+            ).defineSizeMapping(mapping)
                 .addService(googletag.pubads());
 
-            /* ===== D3 ===== */
+            /* D3 */
             googletag.defineSlot(
                 '/23330730517/skillgame24.com_d3',
-                [[300, 600], [320, 480], [728, 90], [970, 250]],
+                [[970, 250], [970, 90], [728, 90], [300, 600], [300, 250], [320, 480]],
                 'div-gpt-ad-1766483435254-0'
-            ).defineSizeMapping(responsiveMapping)
+            ).defineSizeMapping(mapping)
                 .addService(googletag.pubads());
 
-        })
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
     </script>
+
     <style>
         .ad-container {
             width: 100% !important;
@@ -264,14 +268,17 @@
 
         <div class="section">
             <p class="navigation"><a href="../index-2.html">Home</a>&gt;&gt;<span>8 Ball Pool</span></p>
-            <div class="mobile_ads_top">
-                <div class="ad_content">
-                    <div class="ad-container">
-                        <div id="div-gpt-ad-1766483370586-0"></div>
-                    </div>
-                </div>
+            <div class="ad_box">
+                <div id="div-gpt-ad-1766483370586-0" style="width:100%;min-height:250px;text-align:center;"></div>
                 <p>Advertisement</p>
             </div>
+
+            <script>
+                googletag.cmd.push(function () {
+                    googletag.display('div-gpt-ad-1766483370586-0');
+                });
+            </script>
+
 
             <div class="public_box">
                 <div class="game_box">
@@ -379,13 +386,17 @@
                         </div>
                     </div>
                     <div class="ad_box">
-                        <div class="ad">
-                            <div class="ad-container">
-                                <div id="div-gpt-ad-1766483398952-0"></div>
-                            </div>
-                            <p>Advertisement</p>
+                        <div id="div-gpt-ad-1766483398952-0" style="width:100%;min-height:250px;text-align:center;">
                         </div>
+                        <p>Advertisement</p>
                     </div>
+                    <script>
+                        googletag.cmd.push(function () {
+                            googletag.display('div-gpt-ad-1766483398952-0');
+                        });
+                    </script>
+
+
                 </div>
             </div>
 
@@ -521,14 +532,17 @@
                 </div>
             </div>
 
-            <div class="s_box">
-                <div class="ad">
-                    <div class="ad-container">
-                        <div id="div-gpt-ad-1766483435254-0"></div>
-                    </div>
-                    <p>Advertisement</p>
-                </div>
+            <div class="ad_box">
+                <div id="div-gpt-ad-1766483435254-0" style="width:100%;min-height:250px;text-align:center;"></div>
+                <p>Advertisement</p>
             </div>
+
+            <script>
+                googletag.cmd.push(function () {
+                    googletag.display('div-gpt-ad-1766483435254-0');
+                });
+            </script>
+
             <div class="s_box">
                 <h3 class="title grey">Recommended Games</h3>
                 <div class="box_two">
