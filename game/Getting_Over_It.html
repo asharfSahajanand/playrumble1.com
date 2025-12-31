@@ -74,50 +74,86 @@ gtag('config', 'AW-17827820993');
     }
 
     </script>
-
+  <!-- Google GPT -->
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
 
     <script>
         window.googletag = window.googletag || { cmd: [] };
+
         googletag.cmd.push(function () {
-            googletag.defineSlot('/23330730517/skillgame24.com_d1', [336, 280], 'div-gpt-ad-1766483370586-0').addService(googletag.pubads());
-            googletag.pubads().collapseEmptyDivs();
+
+            /* Responsive Size Mapping */
+            var mapping = googletag.sizeMapping()
+                .addSize([1024, 0], [[970, 250], [970, 90], [728, 90]])
+                .addSize([768, 0], [[728, 90], [300, 250]])
+                .addSize([0, 0], [[300, 250], [320, 480]])
+                .build();
+
+            function defineAd(path, id) {
+                googletag.defineSlot(
+                    path,
+                    [[970, 250], [970, 90], [728, 90], [300, 250], [320, 480]],
+                    id
+                ).defineSizeMapping(mapping)
+                    .addService(googletag.pubads());
+            }
+
+            /* Ad Slots */
+            defineAd('/23330730517/skillgame24.com_d1', 'div-gpt-ad-1766483370586-0');
+            defineAd('/23330730517/skillgame24.com_d2', 'div-gpt-ad-1766483398952-0');
+            defineAd('/23330730517/skillgame24.com_d3', 'div-gpt-ad-1766483435254-0');
+
+            /* Lazy Load */
+            googletag.pubads().enableLazyLoad({
+                fetchMarginPercent: 400,
+                renderMarginPercent: 200,
+                mobileScaling: 2
+            });
+
+            googletag.pubads().enableSingleRequest();
             googletag.enableServices();
         });
     </script>
 
-    <script>
-window.googletag = window.googletag || { cmd: [] };
-googletag.cmd.push(function () {
-    googletag.defineSlot(
-        '/23330730517/skillgame24.com_d2',
-        [
-            [970, 90],   // Desktop leaderboard
-            [728, 90],   // Tablet landscape
-            [468, 60],   // Tablet small
-            [336, 280],  // Mobile rectangle 
-            [320, 100],  // Mobile wide banner
-            [320, 50]    // Mobile standard
-        ],
-        "div-gpt-ad-1766483398952-0"
-    ).addService(googletag.pubads());
+    <style>
+        /* ================= ADS CSS ================= */
 
-    googletag.pubads().collapseEmptyDivs();
-    googletag.enableServices();
-});
+        .ad_box {
+            width: 100% !important;
+            text-align: center;
+            margin: 18px auto;
+        }
 
-googletag.cmd.push(function () {
-    googletag.display("div-gpt-ad-1766483398952-0");
-});
-</script>
+        /* AD CONTAINER */
+        .ad-slot {
+            width: 100% !important;
+            margin: 0 auto;
+            min-height: 250px;
+            /* REQUIRED for lazy load */
+        }
 
-    <script>
-        window.googletag = window.googletag || { cmd: [] };
-        googletag.cmd.push(function () {
-            googletag.defineSlot('/23330730517/skillgame24.com_d3', [970, 280], 'div-gpt-ad-1766483435254-0').addService(googletag.pubads());
-            googletag.pubads().collapseEmptyDivs();
-            googletag.enableServices();
-        });
-    </script> 
+        /* Desktop */
+        @media (min-width:1024px) {
+            .ad-slot {
+                min-height: 90px;
+            }
+        }
+
+        /* Tablet */
+        @media (min-width:768px) and (max-width:1023px) {
+            .ad-slot {
+                min-height: 90px;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width:767px) {
+            .ad-slot {
+                min-height: 250px;
+            }
+        }
+    </style>
+
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -237,21 +273,11 @@ googletag.cmd.push(function () {
         <div class="section">
             <p class="navigation"><a href="../index-2.html">Home</a>&gt;&gt;<span>Getting Over It
 </span></p>
-   <div class="mobile_ads_top">
-        <div class="ad_content">
-            <!-- <div style="width: 336px; height: 280px;"> -->
-                <!-- /23330730517/skillgame24.com_d1 -->
-                <div id='div-gpt-ad-1766483370586-0' style='width:100%;height:280px;margin:auto;'>
-                    <script>
-                        googletag.cmd.push(function () { 
-                            googletag.display('div-gpt-ad-1766483370586-0'); 
-                        });
-                    </script>
-                <!-- </div> -->
+      <!-- div 1  -->
+            <div class="ad_box">
+                <div id="div-gpt-ad-1766483370586-0" class="ad-slot"></div>
+                <p>Advertisement</p>
             </div>
-        </div>
-        <p>Advertisement</p>
-    </div>
 
 <div class="public_box">
                 <div class="game_box">
@@ -357,20 +383,12 @@ googletag.cmd.push(function () {
                             </script>
                         </div>
                     </div>
-                    <div class="ad_box">
-                        <div class="ad">
-                            <div style="width: 336px;height: 280px;">
-                                 <!-- /23330730517/skillgame24.com_d1 -->
-                                 <div id='div-gpt-ad-1766483370586-0' style='min-width: 336px; min-height: 280px;'>
-                                    <script>
-                                        googletag.cmd.push(function () { googletag.display('div-gpt-ad-1766483370586-0'); });
-                                    </script>
-                                </div>
-                            </div>
-                            <p>Advertisement</p>
-                        </div>
-                    </div>
-                </div>
+                       </div>
+            </div>
+              <!-- div 2  -->
+            <div class="ad_box">
+                <div id="div-gpt-ad-1766483398952-0" class="ad-slot"></div>
+                <p>Advertisement</p>
             </div>
             <!--轮播-->
             <div class="public_box">
@@ -422,14 +440,10 @@ googletag.cmd.push(function () {
                 </div>
             </div>
 
-            <div class="s_box">
-                 <div class="ad" style="text-align:center;">
-    <div style="width:100%; max-width:970px; margin:auto;">
-        <!-- /23330730517/skillgame24.com_d2 -->
-        <div id="div-gpt-ad-1766483398952-0" style="width:100%; min-height:50px; margin:auto;"></div>
-    </div>
-    <p>Advertisement</p>
-</div>
+            <!-- div 3 -->
+            <div class="ad_box">
+                <div id="div-gpt-ad-1766483435254-0" class="ad-slot"></div>
+                <p>Advertisement</p>
             </div>
             <div class="public_box">
                 <div class="box_three">
@@ -648,30 +662,41 @@ googletag.cmd.push(function () {
         lazyload()
     </script>
  <script>
-         document.addEventListener('DOMContentLoaded', function () {
-          let isOverGoogleAdinfo_adsbygoogle = false;
+        document.addEventListener('DOMContentLoaded', function () {
 
-          const adElement = document.getElementById('div-gpt-ad-1766483370586-0');
+            const adIds = [
+                'div-gpt-ad-1766483370586-0', // D1
+                'div-gpt-ad-1766483398952-0', // D2
+                'div-gpt-ad-1766483435254-0'  // D3
+            ];
 
-          if (adElement) {
-            adElement.addEventListener('mouseover', function () {
-              isOverGoogleAdinfo_adsbygoogle = true;
+            let isOverAd = false;
+
+            adIds.forEach(function (id) {
+                const adEl = document.getElementById(id);
+                if (!adEl) return;
+
+                adEl.addEventListener('mouseenter', function () {
+                    isOverAd = true;
+                });
+
+                adEl.addEventListener('mouseleave', function () {
+                    isOverAd = false;
+                });
             });
 
-            adElement.addEventListener('mouseout', function () {
-              isOverGoogleAdinfo_adsbygoogle = false;
+            window.addEventListener('blur', function () {
+                if (isOverAd) {
+                    window.dataLayer = window.dataLayer || [];
+                    dataLayer.push({
+                        event: 'detail_ck'
+                    });
+                }
             });
-          }
-
-          window.addEventListener('blur', function () {
-            if (isOverGoogleAdinfo_adsbygoogle === true) {
-              dataLayer.push({ event: 'detail_ck' });
-            }
-          });
 
         });
-
     </script>
+
     <script>
         
         // Mobile Navigation Toggle Script
@@ -840,7 +865,13 @@ googletag.cmd.push(function () {
 })();
     </script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"2d0e241130bf4b05b6cb445ce454da0a","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-</body>
+  <script>
+        googletag.cmd.push(function () {
+            googletag.display('div-gpt-ad-1766483370586-0');
+            googletag.display('div-gpt-ad-1766483398952-0');
+            googletag.display('div-gpt-ad-1766483435254-0');
+        });
+    </script></body>
 
 <!-- Mirrored from www.civilitythegame.com/game/Getting_Over_It.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Dec 2025 09:04:58 GMT -->
 </html>
