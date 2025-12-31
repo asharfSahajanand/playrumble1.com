@@ -115,6 +115,263 @@
         min-height: 250px;
       }
     }
+
+    /* ================= MOBILE GRID FIX - FORCE 2 COLUMNS ================= */
+    /* Fix for .box_one and .gri - Apply to all mobile and tablet sizes */
+    @media screen and (max-width: 1024px) {
+      /* Override main.css fixed grid layout - MUST be very specific */
+      html body .main.container .section .s_box .gri,
+      body .section .s_box .gri,
+      .section .s_box .gri,
+      .s_box .gri,
+      .gri {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-auto-rows: auto !important;
+        gap: 10px !important;
+        padding: 10px 5px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+      }
+      
+      /* Fix .box_one - Change from flex to grid */
+      html body .main.container .section .s_box .box_one,
+      body .section .s_box .box_one,
+      .section .s_box .box_one,
+      .s_box .box_one,
+      .box_one {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+        padding: 5px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+      }
+      
+      /* Fix .box_one a - Proper box sizes */
+      html body .main.container .section .s_box .box_one a,
+      body .section .s_box .box_one a,
+      .section .s_box .box_one a,
+      .s_box .box_one a,
+      .box_one a {
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+        display: block !important;
+      }
+      
+      /* Fix .box_one a .img - Square aspect ratio */
+      html body .main.container .section .s_box .box_one a .img,
+      body .section .s_box .box_one a .img,
+      .section .s_box .box_one a .img,
+      .s_box .box_one a .img,
+      .box_one a .img {
+        width: 100% !important;
+        height: 0 !important;
+        padding-bottom: 100% !important;
+        position: relative !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+        border-radius: 6px !important;
+      }
+      
+      /* Fix .box_one a .content_info */
+      html body .main.container .section .s_box .box_one a .content_info,
+      body .section .s_box .box_one a .content_info,
+      .section .s_box .box_one a .content_info,
+      .s_box .box_one a .content_info,
+      .box_one a .content_info {
+        width: 100% !important;
+        padding: 8px 5px !important;
+        height: auto !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+      /* Override main.css fixed grid layout - MUST be very specific */
+      html body .main.container .section .s_box .gri,
+      body .section .s_box .gri,
+      .section .s_box .gri,
+      .s_box .gri,
+      .gri {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-auto-rows: auto !important;
+        gap: 10px !important;
+        padding: 10px 5px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+      }
+      
+      /* Override main.css fixed width on links - MUST be very specific */
+      html body .main.container .section .s_box .gri a,
+      body .section .s_box .gri a,
+      .section .s_box .gri a,
+      .s_box .gri a,
+      .gri a {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+        display: block !important;
+        position: relative !important;
+      }
+      
+      /* Override main.css fixed image container dimensions - MUST be very specific */
+      html body .main.container .section .s_box .gri a .img,
+      body .section .s_box .gri a .img,
+      .section .s_box .gri a .img,
+      .s_box .gri a .img,
+      .gri a .img {
+        width: 100% !important;
+        height: 0 !important;
+        padding-bottom: 100% !important;
+        position: relative !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+        border-radius: 6px !important;
+      }
+      
+      /* Image inside container */
+      .section .s_box .gri a .img img,
+      .s_box .gri a .img img,
+      .gri a .img img {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        display: block !important;
+      }
+      
+      /* Override main.css fixed content_info width - MUST be very specific */
+      html body .main.container .section .s_box .gri a .content_info,
+      body .section .s_box .gri a .content_info,
+      .section .s_box .gri a .content_info,
+      .s_box .gri a .content_info,
+      .gri a .content_info {
+        width: 100% !important;
+        padding: 8px 5px !important;
+        height: auto !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        background: #fff !important;
+      }
+      
+      /* Text inside content_info */
+      .section .s_box .gri a .content_info p,
+      .s_box .gri a .content_info p,
+      .gri a .content_info p {
+        font-size: 13px !important;
+        text-align: center !important;
+        margin: 0 !important;
+        color: #7b7b7b !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        white-space: nowrap !important;
+      }
+      
+      /* Ad box spans full width */
+      .section .s_box .gri .ad_box,
+      .s_box .gri .ad_box,
+      .gri .ad_box {
+        grid-column: 1 / -1 !important;
+        width: 100% !important;
+        margin: 15px 0 !important;
+      }
+    }
+    
+    /* ================= LOGO FIX ================= */
+    /* Desktop Logo */
+    .aside .header .logo {
+      margin: 15px 0 28px !important;
+      height: 31px !important;
+      display: block !important;
+    }
+    
+    .aside .header .logo a {
+      height: 100% !important;
+      display: block !important;
+      text-align: center !important;
+    }
+    
+    .aside .header .logo a img {
+      height: 31px !important;
+      width: auto !important;
+      max-width: 180px !important;
+      cursor: pointer !important;
+      display: block !important;
+      margin: 0 auto !important;
+    }
+    
+    /* Mobile Logo Fix */
+    @media screen and (max-width: 768px) {
+      .aside .header .logo {
+        text-align: center !important;
+        margin: 0 !important;
+        padding: 5px 0 !important;
+        height: auto !important;
+        display: block !important;
+      }
+      
+      .aside .header .logo a {
+        display: inline-block !important;
+        padding: 5px 15px !important;
+        background: rgba(255, 255, 255, 0.95) !important;
+        border-radius: 12px !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+        height: auto !important;
+      }
+      
+      .aside .header .logo a:active {
+        transform: scale(0.95) !important;
+      }
+      
+      .aside .header .logo a img {
+        max-width: 140px !important;
+        height: auto !important;
+        max-height: 36px !important;
+        display: block !important;
+        width: auto !important;
+      }
+    }
+    
+    @media screen and (max-width: 575px) {
+      .aside .header .logo a img {
+        max-width: 130px !important;
+        max-height: 34px !important;
+      }
+    }
+    
+    @media screen and (max-width: 479px) {
+      .aside .header .logo a img {
+        max-width: 110px !important;
+        max-height: 32px !important;
+      }
+    }
+    
+    @media screen and (max-width: 374px) {
+      .aside .header .logo a img {
+        max-width: 100px !important;
+        max-height: 30px !important;
+      }
+    }
   </style>
 
 
